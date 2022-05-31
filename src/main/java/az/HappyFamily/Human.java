@@ -67,25 +67,25 @@ public class Human {
     }
 
     private Human(String name, String surname, byte year, short iq, Pet pet, Human mother, Human father, String[]
-        schedule){
-            this.name = name;
-            this.surname = surname;
-            this.year = year;
-            this.iq = iq;
-            this.pet = pet;
-            this.mother = mother;
-            this.father = father;
-            this.schedule = schedule;
-        }
+            schedule) {
+        this.name = name;
+        this.surname = surname;
+        this.year = year;
+        this.iq = iq;
+        this.pet = pet;
+        this.mother = mother;
+        this.father = father;
+        this.schedule = schedule;
+    }
 
 
-    public void greetPet () {
-            System.out.println("Hello,%s", pet.getNickname());
-        }
+    public void greetPet() {
+        System.out.println("Hello,%s", pet.getNickname());
+    }
 
-    public void describePet () {
-            System.out.println("I have a %s,he is %d years old", pet.getSpecies(), pet.getAge());
-        }
+    public void describePet() {
+        System.out.println("I have a %s,he is %d years old", pet.getSpecies(), pet.getAge());
+    }
 
     public void setSchedule(String[] schedule) {
         this.schedule = schedule;
