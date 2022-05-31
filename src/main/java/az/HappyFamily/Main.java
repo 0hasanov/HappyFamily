@@ -9,9 +9,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Human Tenz = new Human();
         Human Kydea = new Human();
-        Human Ayaz = new Human("Ayaz","Baxalov",1985,"Tenz","Kydea");
-        Ayaz.setMother(sc.next());
-        System.out.println(Ayaz.getMother());
+        Human Ayaz = new Human("Ayaz","Baxalov",(byte) 1985,"Tenz","Kydea");
+        Ayaz.setPet(sc.next());
+        System.out.println(Ayaz.getPet());
 
     }
 }

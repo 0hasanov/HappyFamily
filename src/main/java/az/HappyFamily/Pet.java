@@ -30,7 +30,7 @@ public class Pet {
     }
 
     private void respond() {
-        System.out.println("Hello, owner. I am %s. I miss you!", nickname);
+        System.out.printf("Hello, owner. I am %s. I miss you!", nickname);
     }
 
     private void foul() {
@@ -77,16 +77,4 @@ public class Pet {
             this.habits = habits;
         }
 
-        public void eat () {
-            System.out.println("I am eating");
-        }
-
-        public void respond () {
-            System.out.println("Hello, owner. I am %s. I miss you!", nickname);
-        }
-
-        public void foul () {
-
-            System.out.println("I need to cover it up");
-        }
 }

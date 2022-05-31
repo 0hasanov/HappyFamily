@@ -15,7 +15,6 @@ public class Human {
     }
 
 
-
     private Human(String name, String surname, byte year) {
         this.name = name;
         this.surname = surname;
@@ -95,7 +94,7 @@ public class Human {
         return mother;
     }
 
-    public void setMother(String mother) {
+    public void setMother(Human mother) {
         this.mother = mother;
     }
 
@@ -112,4 +111,3 @@ public class Human {
 
     }
 }
-
