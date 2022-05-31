@@ -24,7 +24,7 @@ public class Pet {
         this.habits = habits;
     }
 
-<<<<<<< HEAD
+
     private void eat() {
         System.out.println("I am eating");
     }
@@ -34,58 +34,59 @@ public class Pet {
     }
 
     private void foul() {
-=======
-    public String getSpecies() {
-        return species;
-    }
-
-    public void setSpecies(String species) {
-        this.species = species;
-    }
-
-    public String getNickname() {
-        return nickname;
-    }
-
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
-    }
-
-    public short getAge() {
-        return age;
-    }
-
-    public void setAge(short age) {
-        this.age = age;
-    }
-
-    public byte getTricklevel() {
-        return tricklevel;
-    }
-
-    public void setTricklevel(byte tricklevel) {
-        this.tricklevel = tricklevel;
-    }
-
-    public String[] getHabits() {
-        return habits;
-    }
-
-    public void setHabits(String[] habits) {
-        this.habits = habits;
-    }
-
-    public void eat() {
-        System.out.println("I am eating");
-    }
-
-    public void respond() {
-        System.out.println("Hello, owner. I am %s. I miss you!", nickname);
-    }
-
-    public void foul() {
->>>>>>> 6873b44 (Project)
         System.out.println("I need to cover it up");
     }
 
+        public String getSpecies () {
+            return species;
+        }
+
+        public void setSpecies (String species){
+            this.species = species;
+        }
+
+        public String getNickname () {
+            return nickname;
+        }
+
+        public void setNickname (String nickname){
+            this.nickname = nickname;
+        }
+
+        public short getAge () {
+            return age;
+        }
+
+        public void setAge ( short age){
+            this.age = age;
+        }
+
+        public byte getTricklevel () {
+            return tricklevel;
+        }
+
+        public void setTricklevel ( byte tricklevel){
+            this.tricklevel = tricklevel;
+        }
+
+        public String[] getHabits () {
+            return habits;
+        }
+
+        public void setHabits (String[]habits){
+            this.habits = habits;
+        }
+
+        public void eat () {
+            System.out.println("I am eating");
+        }
+
+        public void respond () {
+            System.out.println("Hello, owner. I am %s. I miss you!", nickname);
+        }
+
+        public void foul () {
+
+            System.out.println("I need to cover it up");
+        }
 }

@@ -1,10 +1,6 @@
 package az.HappyFamily;
 
-<<<<<<< HEAD
-private class Human {
-=======
 public class Human {
->>>>>>> 6873b44 (Project)
     private String name;
     private String surname;
     private byte year;
@@ -15,11 +11,11 @@ public class Human {
     private String[] schedule;
 
 
-<<<<<<< HEAD
     private Human() {
-=======
+    }
+
+
     private Human(String ayaz) {
->>>>>>> 6873b44 (Project)
 
     }
 
@@ -27,24 +23,17 @@ public class Human {
         this.name = name;
         this.surname = surname;
         this.year = year;
-
     }
 
-<<<<<<< HEAD
-    private Human(String name, String surname, byte year, String father,String mother) {
-=======
     private Human(String name, String surname, byte year, Human father, Human mother) {
->>>>>>> 6873b44 (Project)
         this.name = name;
         this.surname = surname;
         this.year = year;
         this.father = father;
         this.mother = mother;
+    }
 
-<<<<<<< HEAD
-
-
-    public Human(String name, String surname, byte year, short iq, Pet pet, Human mother, Human father, String[] schedule) {
+    private Human(String name, String surname, byte year, short iq, Pet pet, Human mother, Human father, String[] schedule) {
         this.name = name;
         this.surname = surname;
         this.year = year;
@@ -57,38 +46,11 @@ public class Human {
 
 
     private void greetPet() {
-        System.out.println("Hello,%s", pet.nickname);
+        System.out.printf("Hello,%s", pet.getNickname());
     }
 
     private void describePet() {
-        System.out.println("I have a %s,he is %d years old", pet.species, pet.age
-                ? pet.tricklevel > 50"very sly" :"almost not sly");
-=======
-    }
-
-    private Human(String name, String surname, byte year, short iq, Pet pet, Human mother, Human father, String[]
-            schedule) {
-        this.name = name;
-        this.surname = surname;
-        this.year = year;
-        this.iq = iq;
-        this.pet = pet;
-        this.mother = mother;
-        this.father = father;
-        this.schedule = schedule;
-    }
-
-
-    public void greetPet() {
-        System.out.println("Hello,%s", pet.getNickname());
-    }
-
-    public void describePet() {
-        System.out.println("I have a %s,he is %d years old", pet.getSpecies(), pet.getAge());
-    }
-
-    public void setSchedule(String[] schedule) {
-        this.schedule = schedule;
+        System.out.printf("I have a %s,he is %d years old", pet.getSpecies(), pet.getAge());
     }
 
 
@@ -150,7 +112,7 @@ public class Human {
 
     public String[] getSchedule() {
         return schedule;
->>>>>>> 6873b44 (Project)
-    }
 
+    }
 }
+
