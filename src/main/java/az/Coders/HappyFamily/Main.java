@@ -1,6 +1,4 @@
-package az.HappyFamily;
-
-import java.util.Scanner;
+package az.Coders.HappyFamily;
 
 public class Main {
 
@@ -21,5 +19,7 @@ public class Main {
         System.out.println(boy);
         System.out.println(boy.getPet().getNickname());
         System.out.println(boy.getFather().getYear());
+
+        System.out.println(Human.class);
     }
 }

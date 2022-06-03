@@ -1,4 +1,6 @@
-package az.HappyFamily;
+package az.Coders.HappyFamily;
+
+import java.util.Random;
 
 public class Human {
     private String name;
@@ -112,5 +114,16 @@ public class Human {
     public void describePet() {
         System.out.printf("I have a %s, he is %d years old, he is %s",
                 pet.getSpecies(), pet.getAge(), pet.getTrickLevel() > 50 ? "very sly" : "almost not sly");
+    }
+
+    public void feed (){
+        Random number = new Random();
+        if (pet.getTrickLevel() <  number) {
+            System.out.println("Hm... I will feed Jack's");
+        }
+        else {
+            System.out.println("I think Jack is not hungry.");
+        }
+
     }
 }

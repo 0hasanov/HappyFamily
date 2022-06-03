@@ -1,4 +1,4 @@
-package az.HappyFamily;
+package az.Coders.HappyFamily;
 
 public class Pet {
     private String species;
