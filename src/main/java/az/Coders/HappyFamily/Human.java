@@ -116,7 +116,7 @@ public class Human {
                 pet.getSpecies(), pet.getAge(), pet.getTrickLevel() > 50 ? "very sly" : "almost not sly");
     }
 
-    public void feed (){
+    /*public void feed (){
         Random number = new Random();
         if (pet.getTrickLevel() <  number) {
             System.out.println("Hm... I will feed Jack's");
@@ -124,6 +124,5 @@ public class Human {
         else {
             System.out.println("I think Jack is not hungry.");
         }
-
+*/
     }
-}

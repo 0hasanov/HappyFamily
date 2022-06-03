@@ -20,6 +20,5 @@ public class Main {
         System.out.println(boy.getPet().getNickname());
         System.out.println(boy.getFather().getYear());
 
-        System.out.println(Human.class);
     }
 }
