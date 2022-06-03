@@ -3,33 +3,34 @@ package az.HappyFamily;
 public class Human {
     private String name;
     private String surname;
-    private byte year;
-    private short iq;
+    private short year;
+    private byte iq;
     private Pet pet;
     private Human mother;
     private Human father;
-    private String[] schedule;
+    private String[][] schedule;
 
 
-    private Human() {
+
+    public Human() {
     }
 
-
-    private Human(String name, String surname, byte year) {
+    public Human(String name, String surname, short year) {
         this.name = name;
         this.surname = surname;
         this.year = year;
     }
 
-    private Human(String name, String surname, byte year, Human father, Human mother) {
+    public Human(String name, String surname, short year, Human mother, Human father) {
         this.name = name;
         this.surname = surname;
         this.year = year;
-        this.father = father;
         this.mother = mother;
+        this.father = father;
     }
 
-    private Human(String name, String surname, byte year, short iq, Pet pet, Human mother, Human father, String[] schedule) {
+    public Human(String name, String surname, short year, byte iq, Pet pet, Human mother, Human father,
+                 String[][] schedule) {
         this.name = name;
         this.surname = surname;
         this.year = year;
@@ -39,16 +40,6 @@ public class Human {
         this.father = father;
         this.schedule = schedule;
     }
-
-
-    private void greetPet() {
-        System.out.printf("Hello,%s", pet.getNickname());
-    }
-
-    private void describePet() {
-        System.out.printf("I have a %s,he is %d years old", pet.getSpecies(), pet.getAge());
-    }
-
 
     public String getName() {
         return name;
@@ -66,19 +57,19 @@ public class Human {
         this.surname = surname;
     }
 
-    public byte getYear() {
+    public short getYear() {
         return year;
     }
 
-    public void setYear(byte year) {
+    public void setYear(short year) {
         this.year = year;
     }
 
-    public short getIq() {
+    public byte getIq() {
         return iq;
     }
 
-    public void setIq(short iq) {
+    public void setIq(byte iq) {
         this.iq = iq;
     }
 
@@ -106,8 +97,20 @@ public class Human {
         this.father = father;
     }
 
-    public String[] getSchedule() {
+    public String[][] getSchedule() {
         return schedule;
+    }
 
+    public void setSchedule(String[][] schedule) {
+        this.schedule = schedule;
+    }
+
+    public void greetPet() {
+        System.out.printf("Hello, %s", pet.getNickname());
+    }
+
+    public void describePet() {
+        System.out.printf("I have a %s, he is %d years old, he is %s",
+                pet.getSpecies(), pet.getAge(), pet.getTrickLevel() > 50 ? "very sly" : "almost not sly");
     }
 }

@@ -6,12 +6,20 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Human Tenz = new Human();
-        Human Kydea = new Human();
-        Human Ayaz = new Human("Ayaz","Baxalov",(byte) 1985,"Tenz","Kydea");
-        Ayaz.setPet(sc.next());
-        System.out.println(Ayaz.getPet());
+        Pet Alf = new Pet("CAT", "Alf");
 
+        Pet Keddy = new Pet("DOG", "Keddy", (byte) 3, (byte) 20, new String[]{"jump", "lick"});
+
+        Human father = new Human("Ayaz","Baxalov",(short)1980);
+        Human mother  = new Human("Kydea","Baxalova",(short)1985);
+
+        Human boy = new Human("Boy","Boy",(short)2001);
+        boy.setPet(Keddy);
+        boy.setMother(mother);
+        boy.setFather(father);
+
+        System.out.println(boy);
+        System.out.println(boy.getPet().getNickname());
+        System.out.println(boy.getFather().getYear());
     }
 }
