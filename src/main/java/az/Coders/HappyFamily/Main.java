@@ -11,7 +11,7 @@ public class Main {
         Human father = new Human("Ayaz","Baxalov",(short)1980);
         Human mother  = new Human("Kydea","Baxalova",(short)1985);
 
-        Human boy = new Human("Boy","Boy",(short)2001);
+        Human boy = new Human("Tenz","Baxalov",(short)2008,(short) 140,"Kydea," ,"KEDA");
         boy.setPet(Keddy);
         boy.setMother(mother);
         boy.setFather(father);
@@ -19,6 +19,7 @@ public class Main {
         System.out.println(boy);
         System.out.println(boy.getPet().getNickname());
         System.out.println(boy.getFather().getYear());
+        System.out.println(Human.class);
 
     }
 }

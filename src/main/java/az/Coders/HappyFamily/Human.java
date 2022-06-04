@@ -1,6 +1,6 @@
 package az.Coders.HappyFamily;
 
-import java.util.Random;
+import java.util.Arrays;
 
 public class Human {
     private String name;
@@ -13,8 +13,7 @@ public class Human {
     private String[][] schedule;
 
 
-
-    public Human() {
+    public Human(String tenz, String baxalov, short i, short i1) {
     }
 
     public Human(String name, String surname, short year) {
@@ -119,10 +118,25 @@ public class Human {
     /*public void feed (){
         Random number = new Random();
         if (pet.getTrickLevel() <  number) {
-            System.out.println("Hm... I will feed Jack's");
+            System.out.println("Hm... I will feed Jack's %s",pet.getNickname());
         }
         else {
-            System.out.println("I think Jack is not hungry.");
+            System.out.println("I think Jack's %s  is not hungry.", pet.getNickname());
         }
 */
+
+    @Override
+    public String toString() {
+        return "Human{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", year=" + year +
+                ", iq=" + iq +
+                ", pet=" + pet +
+                ", mother=" + mother +
+                ", father=" + father +
+                ", schedule=" + Arrays.toString(schedule) +
+                '}';
+    }
+    //return String.format("Human{name = %s, surname = %s ,year = %d , iq = %d , mother = %s , father = % s , pet = %s ", name, surname, year, iq, mother, father, pet);
     }
