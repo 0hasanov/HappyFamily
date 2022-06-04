@@ -11,7 +11,7 @@ public class Main {
         Human father = new Human("Ayaz","Baxalov",(short)1980);
         Human mother  = new Human("Kydea","Baxalova",(short)1985);
 
-        Human boy = new Human("Tenz","Baxalov",(short)2008,(short) 140,"Kydea," ,"KEDA");
+        Human boy = new Human("Tenz","Baxalov",(short)2008,(byte)140,"Keddy","Kydea","Tenz",new String[][]{"speak"}{"walking"});
         boy.setPet(Keddy);
         boy.setMother(mother);
         boy.setFather(father);

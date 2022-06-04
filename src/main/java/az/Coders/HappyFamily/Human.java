@@ -120,7 +120,7 @@ public class Human {
         if (pet.getTrickLevel() <  number) {
             System.out.println("Hm... I will feed Jack's %s",pet.getNickname());
         }
-        else {
+        if else (pet.getTrickLevel() >  number) {
             System.out.println("I think Jack's %s  is not hungry.", pet.getNickname());
         }
 */
