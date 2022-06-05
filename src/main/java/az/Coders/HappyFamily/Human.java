@@ -7,38 +7,26 @@ public class Human {
     private String surname;
     private short year;
     private byte iq;
-    private Pet pet;
-    private Human mother;
-    private Human father;
     private String[][] schedule;
 
 
-    public Human(String tenz, String baxalov, short i, short i1) {
+
+    public Human() {
+
     }
 
     public Human(String name, String surname, short year) {
         this.name = name;
         this.surname = surname;
         this.year = year;
+
     }
 
-    public Human(String name, String surname, short year, Human mother, Human father) {
-        this.name = name;
-        this.surname = surname;
-        this.year = year;
-        this.mother = mother;
-        this.father = father;
-    }
-
-    public Human(String name, String surname, short year, byte iq, Pet pet, Human mother, Human father,
-                 String[][] schedule) {
+    public Human(String name, String surname, short year, byte iq, String[][] schedule) {
         this.name = name;
         this.surname = surname;
         this.year = year;
         this.iq = iq;
-        this.pet = pet;
-        this.mother = mother;
-        this.father = father;
         this.schedule = schedule;
     }
 
@@ -74,30 +62,6 @@ public class Human {
         this.iq = iq;
     }
 
-    public Pet getPet() {
-        return pet;
-    }
-
-    public void setPet(Pet pet) {
-        this.pet = pet;
-    }
-
-    public Human getMother() {
-        return mother;
-    }
-
-    public void setMother(Human mother) {
-        this.mother = mother;
-    }
-
-    public Human getFather() {
-        return father;
-    }
-
-    public void setFather(Human father) {
-        this.father = father;
-    }
-
     public String[][] getSchedule() {
         return schedule;
     }
@@ -115,28 +79,10 @@ public class Human {
                 pet.getSpecies(), pet.getAge(), pet.getTrickLevel() > 50 ? "very sly" : "almost not sly");
     }
 
-    /*public void feed (){
-        Random number = new Random();
-        if (pet.getTrickLevel() <  number) {
-            System.out.println("Hm... I will feed Jack's %s",pet.getNickname());
-        }
-        if else (pet.getTrickLevel() >  number) {
-            System.out.println("I think Jack's %s  is not hungry.", pet.getNickname());
-        }
-*/
 
     @Override
     public String toString() {
-        return "Human{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", year=" + year +
-                ", iq=" + iq +
-                ", pet=" + pet +
-                ", mother=" + mother +
-                ", father=" + father +
-                ", schedule=" + Arrays.toString(schedule) +
-                '}';
+
+        return String.format("Human{name = %s, surname = %s ,year = %d , iq = %d , mother = %s , father = % s , pet = %s ", name, surname, year, iq, mother, father, pet);
     }
-    //return String.format("Human{name = %s, surname = %s ,year = %d , iq = %d , mother = %s , father = % s , pet = %s ", name, surname, year, iq, mother, father, pet);
-    }
+}

@@ -1,39 +1,33 @@
 package az.Coders.HappyFamily;
 
-import java.util.Arrays;
+import java.util.Random;
+import java.util.Scanner;
 
 public class Family extends Human {
     private Human mother;
     private Human father;
-    private Human children;
+    private Human[] children;
     private Pet pet;
 
-    private Family family;
 
     public Family() {
 
     }
 
-    public Family(Human mother, Human father, Human children, Pet pet,Family family) {
+    public Family(Human mother, Human father, Human[] children, Pet pet) {
+
         this.mother = mother;
         this.father = father;
         this.children = children;
         this.pet = pet;
-        this.family = family;
+    }
+    static {
+        System.out.println("Family class is loading");
     }
 
-    @Override
-    public String toString() {
-        return "Human{" +
-                "name='" + getName() + '\'' +
-                ", surname='" + getSurname() + '\'' +
-                ", year=" + getYear() +
-                ", iq=" + getIq() +
-                ", pet=" + pet +
-                ", mother=" + mother +
-                ", father=" + father +
-                ", schedule=" + Arrays.toString(getSchedule()) +
-                '}';
+    {
+        deleteChild();
+    }
 
     public Human getMother() {
         return mother;
@@ -51,11 +45,11 @@ public class Family extends Human {
         this.father = father;
     }
 
-    public Human getChildren() {
+    public Human[] getChildren() {
         return children;
     }
 
-    public void setChildren(Human children) {
+    public void setChildren(Human[] children) {
         this.children = children;
     }
 
@@ -67,30 +61,33 @@ public class Family extends Human {
         this.pet = pet;
     }
 
-    public Family getFamily(){
-        return family;
-    }
-
-    public void setFamily(Family family) {
-        this.family = family;
-    }
-
 
     public void deleteChild(Human children) {
 
     }
 
-    public void to_welcome_the_favourite(){
+    public void toWelcomeTheFavourite() {
         System.out.println("to welcome the favourite");
     }
-    public void to_describe_the_favourite(){
+
+    public void toDescribeTheFavourite() {
         System.out.println("to describe the favourite");
     }
 
-    public void to_feed(){
-        System.out.println("to feed");
+    public void toFeed() {
+        Scanner sc = new Scanner(System.in);
+        Random random = new Random(101);
+        if (pet.getTrickLevel() < random) {
+            System.out.printf("Hm... I will feed Jack's %s", pet.getNickname());
+        } else {
+            System.out.printf("I think Jack's %s  is not hungry.", pet.getNickname());
+        }
+    }
 
+    public String toString() {
+        return String.format("Human{name = %s, surname = %s ,year = %d , iq = %d , mother = %s , father = % s , pet = %s ", getName(), getSurname(), getYear(), getIq(), mother, father, pet);
     }
 
 
 }
+

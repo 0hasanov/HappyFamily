@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34fccbdf-76cb-40dc-a2e5-7bbbb6d15a59" name="Changes" comment="Readme(1)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/UserInterface/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/UserInterface/Username.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Family.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Family.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/UserInterface/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/UserInterface/Username.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +42,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/User/IdeaProjects/group-07-05-22"
   }
-}</component>
-  <component name="RunManager" selected="Application.az.Coders.HappyFamily.UserInterface.Main">
+}]]></component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Boolean" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="az.Coders.HappyFamily.Boolean" />
       <module name="HappyFamily" />
@@ -101,8 +104,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.az.Coders.HappyFamily.UserInterface.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.az.Coders.HappyFamily.UserInterface.Main" />
         <item itemvalue="Application.sasd" />
         <item itemvalue="Application.Boolean" />
       </list>
