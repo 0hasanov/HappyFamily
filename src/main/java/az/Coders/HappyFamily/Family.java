@@ -1,17 +1,21 @@
 package az.Coders.HappyFamily;
 
+import java.util.Arrays;
 import java.util.Random;
-import java.util.Scanner;
 
 public class Family extends Human {
     private Human mother;
     private Human father;
-    private Human[] children;
+    private Human[] children = {};
     private Pet pet;
-
 
     public Family() {
 
+    }
+
+    public Family(Human mother, Human father) {
+        this.father = mother;
+        this.mother = father;
     }
 
     public Family(Human mother, Human father, Human[] children, Pet pet) {
@@ -21,13 +25,11 @@ public class Family extends Human {
         this.children = children;
         this.pet = pet;
     }
+
     static {
         System.out.println("Family class is loading");
     }
 
-    {
-        deleteChild();
-    }
 
     public Human getMother() {
         return mother;
@@ -74,14 +76,50 @@ public class Family extends Human {
         System.out.println("to describe the favourite");
     }
 
+    public void greetPet() {
+        System.out.printf("Hello, %s", pet.getNickname());
+    }
+
+    public void describePet() {
+        System.out.printf("I have a %s, he is %d years old, he is %s",
+                pet.getSpecies(), pet.getAge(), pet.getTrickLevel() > 50 ? "very sly" : "almost not sly");
+    }
+
+
     public void toFeed() {
-        Scanner sc = new Scanner(System.in);
         Random random = new Random(101);
-        if (pet.getTrickLevel() < random) {
+        if (pet.getTrickLevel() < random.nextInt()) {
             System.out.printf("Hm... I will feed Jack's %s", pet.getNickname());
         } else {
             System.out.printf("I think Jack's %s  is not hungry.", pet.getNickname());
         }
+    }
+
+    public void addChild(Human child) {
+        Human[] newChildren = Arrays.copyOf(this.children, this.children.length + 1);
+
+        newChildren[this.children.length] = child;
+
+        this.children = newChildren;
+
+    }
+
+    public boolean deleteChild(int index) {
+        if (index >= 0 && index < this.children.length) {
+            Human[] newChildren = new Human[this.children.length - 1];
+
+            for (int i = 0, j = 0; i < this.children.length; i++) {
+                if (index != i) newChildren[j++] = this.children[i];
+            }
+            this.children = newChildren;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public int countFamily() {
+        return 2 + this.children.length;
     }
 
     public String toString() {

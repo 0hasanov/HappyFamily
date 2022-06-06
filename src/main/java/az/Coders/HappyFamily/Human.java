@@ -1,6 +1,7 @@
 package az.Coders.HappyFamily;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Human {
     private String name;
@@ -70,19 +71,25 @@ public class Human {
         this.schedule = schedule;
     }
 
-    public void greetPet() {
-        System.out.printf("Hello, %s", pet.getNickname());
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Human human = (Human) o;
+        return year == human.year && iq == human.iq && name.equals(human.name) && surname.equals(human.surname) && Arrays.equals(schedule, human.schedule);
     }
 
-    public void describePet() {
-        System.out.printf("I have a %s, he is %d years old, he is %s",
-                pet.getSpecies(), pet.getAge(), pet.getTrickLevel() > 50 ? "very sly" : "almost not sly");
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(name, surname, year, iq);
+        result = 31 * result + Arrays.hashCode(schedule);
+        return result;
     }
-
 
     @Override
     public String toString() {
 
-        return String.format("Human{name = %s, surname = %s ,year = %d , iq = %d , mother = %s , father = % s , pet = %s ", name, surname, year, iq, mother, father, pet);
+        return String.format("Human{name = %s, surname = %s ,year = %d , iq = %d, schedule = %s ", name, surname, year, iq,schedule);
     }
 }

@@ -1,5 +1,7 @@
 package az.Coders.HappyFamily;
 
+import java.util.Arrays;
+
 public class Pet {
     private String species;
     private String nickname;
@@ -74,5 +76,10 @@ public class Pet {
 
     public void foul() {
         System.out.println("I need to cover it up");
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Pet{species = %s, nickname = %s, age = %d,trickLevel =%d,habits = %s", species,nickname,age,trickLevel,habits);
     }
 }
