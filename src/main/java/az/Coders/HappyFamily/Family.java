@@ -111,7 +111,7 @@ public class Family extends Human {
 
 
     public String toString() {
-        return String.format("Human{name = %s, surname = %s ,year = %d , iq = %d , mother = %s , father = % s , pet = %s ", getName(), getSurname(), getYear(), getIq(), mother, father, pet);
+        return String.format("Human{name = %s, surname = %s ,year = %s , iq = %s , mother = %s , father = %s , pet = %s ", getName(), getSurname(), getYear(), getIq(), mother, father, pet);
     }
 
 

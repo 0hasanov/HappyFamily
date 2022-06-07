@@ -16,13 +16,12 @@ public class Main {
         System.out.println(boy);
         System.out.println("***********");
         Family familyOne = new Family(mother, father);
-        /*familyOne.addChild(boy);
+        familyOne.addChild(boy);
         System.out.println(familyOne);
         familyOne.addChild(girl);
         System.out.println(familyOne);
         System.out.println(familyOne.countFamily());
-        */
-        familyOne.removeElement(familyOne,boy);
+
 
 
     }
