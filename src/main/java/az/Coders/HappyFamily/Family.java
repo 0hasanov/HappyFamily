@@ -1,5 +1,7 @@
 package az.Coders.HappyFamily;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import java.util.Arrays;
 import java.util.Random;
 
@@ -30,6 +32,9 @@ public class Family extends Human {
         System.out.println("Family class is loading");
     }
 
+    {
+        System.out.println("********");
+    }
 
     public Human getMother() {
         return mother;
@@ -61,11 +66,6 @@ public class Family extends Human {
 
     public void setPet(Pet pet) {
         this.pet = pet;
-    }
-
-
-    public void deleteChild(Human children) {
-
     }
 
     public void toWelcomeTheFavourite() {
@@ -104,23 +104,11 @@ public class Family extends Human {
 
     }
 
-    public boolean deleteChild(int index) {
-        if (index >= 0 && index < this.children.length) {
-            Human[] newChildren = new Human[this.children.length - 1];
-
-            for (int i = 0, j = 0; i < this.children.length; i++) {
-                if (index != i) newChildren[j++] = this.children[i];
-            }
-            this.children = newChildren;
-            return true;
-        } else {
-            return false;
-        }
-    }
 
     public int countFamily() {
         return 2 + this.children.length;
     }
+
 
     public String toString() {
         return String.format("Human{name = %s, surname = %s ,year = %d , iq = %d , mother = %s , father = % s , pet = %s ", getName(), getSurname(), getYear(), getIq(), mother, father, pet);
