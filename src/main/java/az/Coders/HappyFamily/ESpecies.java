@@ -9,7 +9,6 @@ public enum ESpecies {
     FOX,
     LEON;
 
-    ESpecies() {
-    }
+
 }
 

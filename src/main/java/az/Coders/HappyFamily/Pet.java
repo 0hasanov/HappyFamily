@@ -88,6 +88,6 @@ public class Pet {
 
     @Override
     public String toString() {
-        return String.format("Pet{species = %s, nickname = %s, age = %d,trickLevel =%d,habits = %s", species,nickname,age,trickLevel,habits);
+        return String.format("Pet{species = %s, nickname = %s, age = %d", species, nickname, age);
     }
 }

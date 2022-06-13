@@ -8,7 +8,7 @@ public class Human {
     private String surname;
     private short year;
     private byte iq;
-    private String[][] schedule;
+    private EDayOfWeek schedule;
 
     static {
         System.out.println(Human.class.getName() + "Human class created");
@@ -31,7 +31,7 @@ public class Human {
 
     }
 
-    public Human(String name, String surname, short year, byte iq, String[][] schedule) {
+    public Human(String name, String surname, short year, byte iq, EDayOfWeek schedule) {
         this.name = name;
         this.surname = surname;
         this.year = year;
@@ -71,11 +71,11 @@ public class Human {
         this.iq = iq;
     }
 
-    public String[][] getSchedule() {
+    public EDayOfWeek getSchedule() {
         return schedule;
     }
 
-    public void setSchedule(String[][] schedule) {
+    public void setSchedule(EDayOfWeek schedule) {
         this.schedule = schedule;
     }
 
@@ -85,19 +85,17 @@ public class Human {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Human human = (Human) o;
-        return year == human.year && iq == human.iq && name.equals(human.name) && surname.equals(human.surname) && Arrays.equals(schedule, human.schedule);
+        return year == human.year && iq == human.iq && Objects.equals(name, human.name) && Objects.equals(surname, human.surname) && schedule == human.schedule;
     }
 
     @Override
     public int hashCode() {
-        int result = Objects.hash(name, surname, year, iq);
-        result = 31 * result + Arrays.hashCode(schedule);
-        return result;
+        return Objects.hash(name, surname, year, iq, schedule);
     }
 
     @Override
     public String toString() {
 
-        return String.format("Human{name = %s, surname = %s ,year = %d , iq = %d, schedule = %s ", name, surname, year, iq,Arrays.deepToString(schedule));
+        return String.format("Human{name = %s, surname = %s ,year = %d , iq = %d, schedule = %s ", name, surname, year, iq,schedule);//Arrays.deepToString(schedule));
     }
 }

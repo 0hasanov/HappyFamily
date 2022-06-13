@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34fccbdf-76cb-40dc-a2e5-7bbbb6d15a59" name="Changes" comment="Readme(1) continue">
-      <change afterPath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/ESpecies.java" afterDir="false" />
+    <list default="true" id="34fccbdf-76cb-40dc-a2e5-7bbbb6d15a59" name="Changes" comment="Readme(2)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/EDayOfWeek.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Family.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Family.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/ESpecies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/ESpecies.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/delChild.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +50,8 @@
     "last_opened_file_path": "C:/Users/User/IdeaProjects/HappyFamily"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Family" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.az.Coders.HappyFamily.Main">
+    <configuration name="az.Coders.HappyFamily.Family" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="az.Coders.HappyFamily.Family" />
       <module name="HappyFamily" />
       <extension name="coverage">
@@ -65,7 +64,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="az.Coders.HappyFamily.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="az.Coders.HappyFamily.Main" />
       <module name="HappyFamily" />
       <extension name="coverage">
@@ -91,7 +90,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="delChild" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="az.Coders.HappyFamily.delChild" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="az.Coders.HappyFamily.delChild" />
       <module name="HappyFamily" />
       <extension name="coverage">
@@ -121,9 +120,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.delChild" />
-        <item itemvalue="Application.Family" />
+        <item itemvalue="Application.az.Coders.HappyFamily.Main" />
+        <item itemvalue="Application.az.Coders.HappyFamily.delChild" />
+        <item itemvalue="Application.az.Coders.HappyFamily.Family" />
         <item itemvalue="JUnit.MainTest" />
         <item itemvalue="Application.az.Coders.HappyFamily.UserInterface.Main" />
       </list>
@@ -187,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654545170774</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Readme(2)">
+      <created>1655148567845</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1655148567845</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,6 +212,7 @@
     <MESSAGE value="Readme(0)" />
     <MESSAGE value="Readme(1)" />
     <MESSAGE value="Readme(1) continue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Readme(1) continue" />
+    <MESSAGE value="Readme(2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme(2)" />
   </component>
 </project>
