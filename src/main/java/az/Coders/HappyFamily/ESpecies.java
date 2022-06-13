@@ -7,8 +7,11 @@ public enum ESpecies {
     PARROT,
     FISH,
     FOX,
-    LEON;
+    LEON,
+    EAGLE;
 
+    ESpecies() {
+    }
 
 }
 

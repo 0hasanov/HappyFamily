@@ -86,6 +86,25 @@ public class Pet {
         System.out.println("I need to cover it up");
     }
 
+//    public enum ESpecies {
+//        CAT,
+//        DOG,
+//        PANDA,
+//        PARROT,
+//        FISH,
+//        FOX,
+//        LEON,
+//        EAGLE;
+//
+//        private boolean canFly(enum ESpecies) {
+//            if ((this.EAGLE.canFly()) == EAGLE) {
+//                return true;
+//            } else {
+//                return false;
+//
+//            }
+//        }
+
     @Override
     public String toString() {
         return String.format("Pet{species = %s, nickname = %s, age = %d", species, nickname, age);
