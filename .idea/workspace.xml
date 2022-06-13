@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34fccbdf-76cb-40dc-a2e5-7bbbb6d15a59" name="Changes" comment="task">
+    <list default="true" id="34fccbdf-76cb-40dc-a2e5-7bbbb6d15a59" name="Changes" comment="Readme(1) continue">
+      <change afterPath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/ESpecies.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Family.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Family.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/Pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/Coders/HappyFamily/delChild.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -38,16 +44,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/IdeaProjects/group-07-05-22&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/User/IdeaProjects/HappyFamily"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="Boolean" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="az.Coders.HappyFamily.Boolean" />
+    <configuration name="Family" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="az.Coders.HappyFamily.Family" />
       <module name="HappyFamily" />
       <extension name="coverage">
         <pattern>
@@ -85,8 +91,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sasd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="az.Coders.HappyFamily.sasd" />
+    <configuration name="delChild" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="az.Coders.HappyFamily.delChild" />
       <module name="HappyFamily" />
       <extension name="coverage">
         <pattern>
@@ -98,12 +104,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HappyFamily" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="az.Coders.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="az.Coders" />
+      <option name="MAIN_CLASS_NAME" value="az.Coders.MainTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.delChild" />
+        <item itemvalue="Application.Family" />
+        <item itemvalue="JUnit.MainTest" />
         <item itemvalue="Application.az.Coders.HappyFamily.UserInterface.Main" />
-        <item itemvalue="Application.sasd" />
-        <item itemvalue="Application.Boolean" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +173,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654301305632</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Readme(1)">
+      <created>1654435936252</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654435936252</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Readme(1) continue">
+      <created>1654545170774</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1654545170774</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,6 +205,7 @@
     <MESSAGE value="project" />
     <MESSAGE value="Readme(0)" />
     <MESSAGE value="Readme(1)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Readme(1)" />
+    <MESSAGE value="Readme(1) continue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme(1) continue" />
   </component>
 </project>

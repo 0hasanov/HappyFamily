@@ -10,6 +10,14 @@ public class Human {
     private byte iq;
     private String[][] schedule;
 
+    static {
+        System.out.println(Human.class.getName() + "Human class created");
+    }
+
+    {
+        System.out.println(Human.class.getName() + "Object created");
+    }
+
 
 
     public Human() {

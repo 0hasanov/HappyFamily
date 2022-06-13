@@ -4,7 +4,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Pet cat = new Pet("cat", "Keddy", (byte) 1, (byte) 45, new String[]{"jump", "lick"});
+        Pet cat = new Pet(ESpecies.CAT, "Keddy", (byte) 1, (byte) 45, new String[]{"jump", "lick"});
         System.out.println(cat);
         Human father = new Human("Ayaz", "Baxalov", (short) 1980, (byte) 100, new String[][]{{"day1", "week1"}, {"day2", "week2"}});
         Human mother = new Human("Kydea", "Baxalova", (short) 1985, (byte) 95, new String[][]{{"day1", "week1"}, {"day2", "week2"}});

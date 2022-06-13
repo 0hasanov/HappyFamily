@@ -3,22 +3,30 @@ package az.Coders.HappyFamily;
 import java.util.Arrays;
 
 public class Pet {
-    private String species;
+    private ESpecies species;
     private String nickname;
     private byte age;
     private byte trickLevel;
     private String[] habits;
 
+    static {
+        System.out.println(Pet.class.getName() + "Pet class created");
+    }
+
+    {
+        System.out.println(Pet.class.getName() + "Object created");
+    }
+
     public Pet() {
 
     }
 
-    public Pet(String species, String nickname) {
+    public Pet(ESpecies species, String nickname) {
         this.species = species;
         this.nickname = nickname;
     }
 
-    public Pet(String species, String nickname, byte age, byte trickLevel, String[] habits) {
+    public Pet(ESpecies species, String nickname, byte age, byte trickLevel, String[] habits) {
         this.species = species;
         this.nickname = nickname;
         this.age = age;
@@ -26,11 +34,11 @@ public class Pet {
         this.habits = habits;
     }
 
-    public String getSpecies() {
+    public ESpecies getSpecies() {
         return species;
     }
 
-    public void setSpecies(String species) {
+    public void setSpecies(ESpecies species) {
         this.species = species;
     }
 
