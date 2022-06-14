@@ -9,7 +9,7 @@ public enum EDayOfWeek {
     Saturday("6"),
     Sunday("7");
 
-    private String daysByNumber;
+    private final String daysByNumber;
     EDayOfWeek(String daysByNumber) {
         this.daysByNumber=daysByNumber;
     }
@@ -18,7 +18,5 @@ public enum EDayOfWeek {
         return daysByNumber;
     }
 
-    public void setDaysByNumber(String daysByNumber) {
-        this.daysByNumber = daysByNumber;
-    }
+
 }
