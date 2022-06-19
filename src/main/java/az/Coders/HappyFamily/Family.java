@@ -3,7 +3,7 @@ package az.Coders.HappyFamily;
 import java.util.Arrays;
 import java.util.Random;
 
-public class Family extends Human {
+public class Family  {
     private Human mother;
     private Human father;
     private Human[] children = {};
@@ -111,7 +111,7 @@ public class Family extends Human {
 
 
     public String toString() {
-        return String.format("Human{name = %s, surname = %s ,year = %s , iq = %s , mother = %s , father = %s , pet = %s ", getName(), getSurname(), getYear(), getIq(), mother, father, pet);
+        return String.format("Human{mother = %s , father = %s , pet = %s,children = %s ", mother, father, pet,Arrays.deepToString(children));
     }
 
 

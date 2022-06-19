@@ -2,7 +2,7 @@ package az.Coders.HappyFamily;
 
 import java.util.Arrays;
 
-public class Pet {
+public abstract class Pet {
     private ESpecies species;
     private String nickname;
     private byte age;
@@ -21,13 +21,12 @@ public class Pet {
 
     }
 
-    public Pet(ESpecies species, String nickname) {
-        this.species = species;
+    public Pet(String nickname) {
+
         this.nickname = nickname;
     }
 
-    public Pet(ESpecies species, String nickname, byte age, byte trickLevel, String[] habits) {
-        this.species = species;
+    public Pet(String nickname, byte age, byte trickLevel, String[] habits) {
         this.nickname = nickname;
         this.age = age;
         this.trickLevel = trickLevel;
@@ -79,31 +78,14 @@ public class Pet {
     }
 
     public void respond() {
-        System.out.printf("Hello, owner. I am %s. I miss you!", this.nickname);
+//        System.out.printf("Hello, owner. I am %s. I miss you!", this.nickname);
     }
 
-    public void foul() {
-        System.out.println("I need to cover it up");
-    }
+//    public void foul() {
+//        System.out.println("I need to cover it up");
+//    }
 
-//    public enum ESpecies {
-//        CAT,
-//        DOG,
-//        PANDA,
-//        PARROT,
-//        FISH,
-//        FOX,
-//        LEON,
-//        EAGLE;
-//
-//        private boolean canFly(enum ESpecies) {
-//            if ((this.EAGLE.canFly()) == EAGLE) {
-//                return true;
-//            } else {
-//                return false;
-//
-//            }
-//        }
+
 
     @Override
     public String toString() {

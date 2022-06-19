@@ -8,7 +8,8 @@ public enum ESpecies {
     FISH(false),
     FOX(false),
     LEON(false),
-    EAGLE(true);
+    EAGLE(true),
+    UNKNOWN(false);
 
 
     private final boolean canFly;

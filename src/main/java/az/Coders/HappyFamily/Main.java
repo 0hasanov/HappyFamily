@@ -5,11 +5,12 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Yang Guang");
-        Pet pet = new Pet();
-        pet.setSpecies(ESpecies.PANDA);
-        pet.setNickname("Yang Guang");
-        pet.setAge((byte) 18);
-        System.out.println(pet);
+        Pet dog = new Dog();
+        dog.setSpecies(ESpecies.PANDA);
+        dog.setNickname("Yang Guang");
+        dog.setAge((byte) 18);
+        System.out.println(dog);
+
 
         System.out.println("Berk");
 
@@ -24,7 +25,14 @@ public class Main {
 
 
         System.out.println("Keddy");
-        Pet cat = new Pet(ESpecies.CAT, "Keddy", (byte) 1, (byte) 45, new String[]{"jump", "lick"});
+        Pet cat = new DomesticCat();
+//        ESpecies.CAT, "Keddy", (byte) 1, (byte) 45, new String[]{"jump", "lick"}
+        cat.setSpecies(ESpecies.CAT);
+        cat.setNickname("Keddy");
+        cat.setAge((byte)1);
+        cat.setTrickLevel((byte)45);
+        cat.setHabits(new String[]{"jump","lick"});
+
         System.out.println(cat);
 
         System.out.println("Father_Mother");
